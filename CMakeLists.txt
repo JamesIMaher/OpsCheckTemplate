@@ -3,7 +3,7 @@ project(OpsCheck C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(OpsCheck main.c cmake-build-debug/main.h)
+add_executable(OpsCheck main.c main.h)
 
 enable_testing()
 
