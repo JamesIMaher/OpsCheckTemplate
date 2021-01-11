@@ -8,9 +8,7 @@
 
 int main (int argc, char *argv[]){
     char* newString = HelloWorldFunc();
-    char* checkString = malloc(sizeof("Hello World!"));
-    strcpy(checkString, "Hello World!");
-    assert(checkString == newString && "You have an error in how you return the string from HelloWorldFunc to the main program.");
+    assert(strcmp(newString,"Hello World!") == 0 && "You have an error in how you return the string from HelloWorldFunc to the main program.");
 }
 //Simple
 //
